@@ -6,8 +6,8 @@
     "private": false,
     "license": "MIT",
     "scripts": {
-        "start:person": "",
-        "start:post": "",
-        "start:gateway": ""
+        "start:person": "cd person && npm run start:dev",
+        "start:post": "cd post && npm run start:dev",
+        "start:gateway": "cd gateway && npm run start:dev",
     }
 }
