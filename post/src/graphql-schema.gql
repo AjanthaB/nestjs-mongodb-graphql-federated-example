@@ -1,0 +1,40 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+directive @key(fields: String!) on OBJECT | INTERFACE
+
+directive @extends on OBJECT | INTERFACE
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @requires(fields: String!) on FIELD_DEFINITION
+
+directive @provides(fields: String!) on FIELD_DEFINITION
+
+type Person {
+  _id: String!
+  posts: [Post!]!
+}
+
+type Post {
+  _id: String!
+  title: String!
+  content: String!
+  authorId: String!
+  person: Person!
+}
+
+type Query {
+  post(id: String!): Post!
+  posts: [Post!]!
+}
+
+type Mutation {
+  createPost(createPostInput: CreatePostInput!): Post!
+}
+
+input CreatePostInput {
+  title: String!
+  content: String!
+}

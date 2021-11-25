@@ -1,0 +1,13 @@
+{
+    "name": "nestjs-graphql-mongodb-federation-example",
+    "version": "0.0.1",
+    "description": "",
+    "author": "Ajantha Bandara",
+    "private": false,
+    "license": "MIT",
+    "scripts": {
+        "start:person": "",
+        "start:post": "",
+        "start:gateway": ""
+    }
+}

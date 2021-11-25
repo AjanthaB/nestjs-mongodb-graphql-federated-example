@@ -1,0 +1,33 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+directive @key(fields: String!) on OBJECT | INTERFACE
+
+directive @extends on OBJECT | INTERFACE
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @requires(fields: String!) on FIELD_DEFINITION
+
+directive @provides(fields: String!) on FIELD_DEFINITION
+
+type Person {
+  _id: String!
+  name: String!
+  age: Int!
+}
+
+type Query {
+  person(id: String!): Person!
+  peoples: [Person!]!
+}
+
+type Mutation {
+  createPerson(createPersonInput: CreatePersonInput!): Person!
+}
+
+input CreatePersonInput {
+  name: String!
+  age: Int!
+}
